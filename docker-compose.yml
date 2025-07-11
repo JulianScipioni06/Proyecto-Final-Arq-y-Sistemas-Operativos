@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  node-red:
+    image: nodered/node-red:latest #Instala la imagen de Node-RED
+    container_name: proyecto-final #Nombre del Contenedor
+    restart: always
+    ports:
+      - "1880:1880" #Puerto
+    volumes:
+      - ./node-red-data:/data #Vincula la carpeta que creamos con los datos de Node-RED
+
+
+
+      
